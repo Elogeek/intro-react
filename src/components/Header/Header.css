@@ -1,0 +1,11 @@
+img {
+    height: 3rem;
+    width: 8rem;
+}
+
+.Header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+

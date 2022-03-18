@@ -1,0 +1,28 @@
+.quantity-selector {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    border: 2px solid #e3e3e3;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.quantity-selector-minus, .quantity-selector-plus, .quantity-selector-amount {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+}
+
+.quantity-selector-minus {
+    color: #545454;
+    background-color: #e3e3e3;
+}
+
+.quantity-selector-plus {
+    color: #F9F9FA;
+    background-color: rgba(0, 0, 255, 0.91);
+}

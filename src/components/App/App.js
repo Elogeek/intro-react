@@ -1,9 +1,18 @@
-import logo from './logo.svg';
+import {ProductList} from "../ProductList/ProductList";
 import './App.css';
+import {Header} from "../Header/Header";
+import {Category} from "../Category/Category";
+import {Cart} from "../Cart/Cart";
 
 function App() {
   return (
-    <div className="App">
+      <>
+        <Header/>
+        <Category/>
+        <Cart/>
+        <ProductList/>
+      </>
+    /**<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,7 +27,7 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </div>**/
   );
 }
 
