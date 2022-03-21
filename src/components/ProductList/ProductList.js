@@ -23,15 +23,13 @@ export const ProductList = function () {
             <ul>
                 {products.map(product =>
                     <li className="Product">
+                        <p>{product.price}</p>
                         <div className="product-image">
                             <img src={product.picture} alt={altText}/>
                         </div>
                          <h1 className="product-title">{product.name}</h1>
                          <span className="product-content">Description : {product.description}</span>
-                        <div>
                         <QuantitySelector/>
-                            <p>{product.price}</p>
-                        </div>
                     </li>
                 )}
             </ul>

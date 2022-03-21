@@ -1,5 +1,4 @@
 import './QuantitySelector.css';
-import {Product} from "../Product/Product";
 
 export const QuantitySelector = function ({start, product}) {
 

@@ -23,17 +23,6 @@
     width: 70%;
 }
 
-.favorite {
-    position: absolute;
-    right: 11%;
-    color: #BBC0C9;
-    font-size: 20px;
-}
-
-.favorite:hover {
-    color: #C72C2C;
-}
-
 .description {
     color: #2F3540;
 }

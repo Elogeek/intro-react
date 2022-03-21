@@ -1,7 +1,5 @@
 import './Product.css';
-import {QuantitySelector} from "../QuantitySelector/QuantitySelector"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/fontawesome-free-regular';
+import {QuantitySelector} from "../QuantitySelector/QuantitySelector";
 
 export const Product = function (props) {
 
@@ -11,12 +9,11 @@ export const Product = function (props) {
                 <img src={props.picture} alt={props.name} />
             </div>
             <div className="content">
-                <span className="favorite"><FontAwesomeIcon icon={faHeart} /></span>
+                <p className="price">${props.price}</p>
                 <h1>{props['name']}</h1>
                 <p className="description">{props.description}</p>
                 <div className="flexRow">
                     <QuantitySelector />
-                    <p className="price">${props.price}</p>
                 </div>
             </div>
         </div>
