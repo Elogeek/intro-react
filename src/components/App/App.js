@@ -2,15 +2,21 @@ import {ProductList} from "../ProductList/ProductList";
 import './App.css';
 import {Header} from "../Header/Header";
 import {Category} from "../Category/Category";
-//import {Product} from "../Product/Product";
-//import {Cart} from "../Cart/Cart";
+import {Cart} from "../Cart/Cart";
+import {Test} from "../Test/Test";
 
 function App() {
   return (
       <>
         <Header/>
-        <Category/>
-        <ProductList/>
+          <div className="container">
+              <Cart />
+              <div className="container_product">
+                  <Category />
+                  <ProductList />
+                  <Test />
+              </div>
+          </div>
       </>
     /**<div className="App">
       <header className="App-header">

@@ -1,35 +1,25 @@
 import './Cart.css';
-import trash from "../../assets/images/trash.svg";
+import {CartItem} from "../CartItem/CartItem";
 
 export const Cart = function () {
 
-    const textAlt = "amazing trash!"
+    const cartItems = [
+        {id: 1, name: "Product 1", quantity: 2 },
+        {id: 2, name: "Product 2", quantity: 4 },
+        {id: 3, name: "Product 3", quantity: 4 }
+    ];
 
-    const cartItem = [
-        {id:1, name: "Product 1", quantity: "2"},
-        {id:2, name: "Product 2", quantity: "4"},
-        {id:3, name: "Product 3", quantity: "4"},
-    ]
+    function handleClick() {
+        console.log('le btn a été cliqué !');
+    }
 
-    return(
+    return (
         <div className="Cart">
-            <ul>
-                <h1>Voir les articles</h1>
-                {cartItem.map(
-                    <div className="Cart_item">
-                        <li>
-                            <img src={trash} alt={textAlt}/>
-                            <span>
-                                {cartItem.name}
-                                <span>
-                                    {cartItem.quantity}
-                                </span>
-                            </span>
-                        </li>
-                    </div>
-                )}
-                <button>Vider le panier</button>
-            </ul>
+            <h1 className="title">Vos articles</h1>
+            {cartItems.map(cartItem =>
+                <CartItem id={cartItem.id} name={cartItem.name} quantity={cartItem.quantity}
+                />)}
+            <button className="btn_refresh_cart" onClick={handleClick}>Vider le panier</button>
         </div>
     );
-};
+}
