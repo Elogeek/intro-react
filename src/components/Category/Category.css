@@ -1,7 +1,8 @@
 .Category {
     display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
+    justify-content: end;
+    margin-bottom: 15px;
+    padding: 15px;
     align-items : center;
 }
 

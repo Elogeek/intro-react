@@ -2,14 +2,14 @@ import {ProductList} from "../ProductList/ProductList";
 import './App.css';
 import {Header} from "../Header/Header";
 import {Category} from "../Category/Category";
-import {Cart} from "../Cart/Cart";
+//import {Product} from "../Product/Product";
+//import {Cart} from "../Cart/Cart";
 
 function App() {
   return (
       <>
         <Header/>
         <Category/>
-        <Cart/>
         <ProductList/>
       </>
     /**<div className="App">
