@@ -25,8 +25,8 @@ export const ProductList = function () {
                         <div className="product-image">
                             <img src={product.picture} alt={altText}/>
                         </div>
-                         <h1>{product.name}</h1>
-                         <span>Description : {product.description}</span>
+                         <h1 className="product-title">{product.name}</h1>
+                         <span className="product-content">Description : {product.description}</span>
                         <div>
                             <div className="quantitySelector">
                                 <p className="quantity-selector-minus">-</p>

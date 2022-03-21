@@ -2,6 +2,7 @@ import {ProductList} from "../ProductList/ProductList";
 import './App.css';
 import {Header} from "../Header/Header";
 import {Category} from "../Category/Category";
+import {Product} from "../Product/Product";
 //import {Product} from "../Product/Product";
 //import {Cart} from "../Cart/Cart";
 
@@ -11,6 +12,7 @@ function App() {
         <Header/>
         <Category/>
         <ProductList/>
+        <Product/>
       </>
     /**<div className="App">
       <header className="App-header">
