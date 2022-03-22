@@ -1,6 +1,7 @@
 import './Product.css';
+import {QuantitySelector} from "../QuantitySelector/QuantitySelector";
 
-export const Product = function ({product,setIsProductUpdated},props) {
+export const Product = function (props) {
 
     return (
         <div className="Product" id={props.id}>
@@ -12,11 +13,7 @@ export const Product = function ({product,setIsProductUpdated},props) {
                 <h1>{props['name']}</h1>
                 <p className="description">{props.description}</p>
                 <div className="flexRow">
-                    <div className="QuantitySelector">
-                        <button>-</button>
-                        <div>{product.cart}</div>
-                        <button>+</button>
-                    </div>
+                    <QuantitySelector/>
                 </div>
             </div>
         </div>

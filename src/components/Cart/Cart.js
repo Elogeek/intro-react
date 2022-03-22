@@ -9,9 +9,6 @@ export const Cart = function () {
         {id: 3, name: "Product 3", quantity: 4 }
     ];
 
-    function handleClick() {
-        console.log('le btn a été cliqué !');
-    }
 
     return (
         <div className="Cart">
@@ -19,7 +16,7 @@ export const Cart = function () {
             {cartItems.map(cartItem =>
                 <CartItem id={cartItem.id} name={cartItem.name} quantity={cartItem.quantity}
                 />)}
-            <button className="btn_refresh_cart" onClick={handleClick}>Vider le panier</button>
+            <button className="btn_refresh_cart">Vider le panier</button>
         </div>
     );
 }
